@@ -1,0 +1,83 @@
+.mascots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mascots .mascot-card {
+  margin: 10px;
+}
+
+.mascot-card {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 250px;
+  height: 125px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mascot-card h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.mascot-card > img,
+.mascot-card > .animated-container {
+  flex-shrink: 0;
+}
+
+.mascot-icon {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.mascot-icon img {
+  height: 100%;
+}
+
+.mascot-card-image {
+  width: auto;
+  height: 126px;
+}
+
+.mascot-detail-image {
+  width: auto;
+  height: 250px;
+}
+
+.mascot-detail {
+  display: grid;
+  grid-template-columns: 450px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ".      header"
+    "left   right";
+}
+
+.mascot-detail .image-container {
+  grid-area: left;
+  display: flex;
+  justify-content: center;
+}
+
+.mascot-detail .text-container {
+  grid-area: right;
+}
+
+.mascot-detail h2 {
+  grid-area: header;
+}
