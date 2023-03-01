@@ -1,5 +1,15 @@
-{{page-title "TestApp"}}
-
-<h2 id="title">Welcome to Ember</h2>
-
+{{page-title 'TestApp'}}
+-> TEST-APP
+<h2 id='title'>Welcome to Ember V2 addon</h2>
+<div style='display: flex;'>
+  <Card @title='NEW' @imageUrl='/images/animoji.gif' />
+  <Card @title='NEW' @imageUrl='/images/gromit.gif' />
+</div>
+<p>
+  <b>
+    <LinkTo @route="main">
+    Go to "/main" route to render drag-drop component
+    </LinkTo>
+  </b>
+</p>
 {{outlet}}
