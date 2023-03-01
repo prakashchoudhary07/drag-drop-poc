@@ -1,0 +1,40 @@
+<div class="mascots" tabindex="0">
+
+  <label for="Duration">
+    Animation Duration
+    <input
+      type="number"
+      value={{this.animationDuration}}
+      {{on "input" (fn this.handleInput "animationDuration")}}
+    />
+  </label>
+  <label for="Duration">
+    Wait for collision check duration
+    <input
+      type="number"
+      value={{this.waitForCollisionCheck}}
+      {{on "input" (fn this.handleInput "waitForCollisionCheck")}}
+    />
+  </label>
+  <label for="minArea">
+    Minimum area percentage for collision
+    <input
+      type="number"
+      value={{this.minimumCollisionArea}}
+      {{on "input" (fn this.handleInput "minimumCollisionArea")}}
+    />
+  </label>
+  <br><br>
+  {{#animated-each
+    this.items
+    use=this.transition
+    duration=this.animationDuration
+    watch=this.watch
+    as |item|
+  }}
+    <div {{on "mousedown" (fn this.beginDragging item)}}>
+      <Cards @title={{item.title}} @imageUrl={{item.imageUrl}} />
+    </div>
+  {{/animated-each}}
+
+</div>
