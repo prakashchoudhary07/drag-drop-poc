@@ -1189,7 +1189,7 @@
     broccoli-funnel "^3.0.8"
     semver "^7.3.8"
 
-"@embroider/macros@^1.0.0", "@embroider/macros@^1.10.0", "@embroider/macros@^1.8.3":
+"@embroider/macros@^1.0.0", "@embroider/macros@^1.10.0", "@embroider/macros@^1.5.0", "@embroider/macros@^1.8.3":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.10.0.tgz#af3844d5db48f001b85cfb096c76727c72ad6c1e"
   integrity sha512-LMbfQGk/a+f6xtvAv5fq/wf2LRxETnbgSCLUf/z6ebzmuskOUxrke+uP55chF/loWrARi9g6erFQ7RDOUoBMSg==
@@ -1217,7 +1217,7 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
-"@embroider/util@^1.9.0":
+"@embroider/util@^0.39.1 || ^0.40.0 || ^0.41.0 || ^1.0.0", "@embroider/util@^1.9.0":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@embroider/util/-/util-1.10.0.tgz#8320d73651e7f5d48dac1b71fb9e6d21cac7c803"
   integrity sha512-utAFKoq6ajI27jyqjvX3PiGL4m+ZyGVlVNbSbE/nOqi2llRyAkh5ltH1WkIK7jhdwQFJouo1NpOSj9J3/HDa3A==
@@ -3750,6 +3750,16 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.314.tgz#33e4ad7a2ca2ddbe2e113874cc0c0e2a00cb46bf"
   integrity sha512-+3RmNVx9hZLlc0gW//4yep0K5SYKmIvB5DXg1Yg6varsuAHlHwTeqeygfS8DWwLCsNOWrgj+p9qgM5WYjw1lXQ==
 
+ember-animated@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/ember-animated/-/ember-animated-1.0.4.tgz#cf9b6a075d15f093265f423300d89b5767aeee63"
+  integrity sha512-dqnVpHqW7Tv/GiMkdiTR+QhhHD5OaAoZCfoL0jl/D26yln5we2CftPtN/ZQ3Y7Ose5FNxovrCvGUBJp0ugfwpA==
+  dependencies:
+    "@embroider/addon-shim" "^1.5.0"
+    "@embroider/macros" "^1.5.0"
+    assert-never "^1.2.1"
+    ember-element-helper "^0.5.0 || ^0.6.0"
+
 ember-auto-import@^2.4.1, ember-auto-import@^2.4.3, ember-auto-import@^2.5.0, ember-auto-import@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/ember-auto-import/-/ember-auto-import-2.6.1.tgz#bd8d434143bd411b99f4a8f32d8b58414d7da4f3"
@@ -3895,7 +3905,7 @@ ember-cli-htmlbars@^5.7.1:
     strip-bom "^4.0.0"
     walk-sync "^2.2.0"
 
-ember-cli-htmlbars@^6.1.1, ember-cli-htmlbars@^6.2.0:
+ember-cli-htmlbars@^6.0.1, ember-cli-htmlbars@^6.1.1, ember-cli-htmlbars@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-6.2.0.tgz#18ec48ee1c93f9eed862a64eb24a9d14604f1dfc"
   integrity sha512-j5EGixjGau23HrqRiW/JjoAovg5UBHfjbyN7wX5ekE90knIEqUUj1z/Mo/cTx/J2VepQ2lE6HdXW9LWQ/WdMtw==
@@ -4230,6 +4240,15 @@ ember-destroyable-polyfill@^2.0.3:
     ember-cli-babel "^7.22.1"
     ember-cli-version-checker "^5.1.1"
     ember-compatibility-helpers "^1.2.1"
+
+"ember-element-helper@^0.5.0 || ^0.6.0":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/ember-element-helper/-/ember-element-helper-0.6.1.tgz#a6fbc5be5f875b5c864ae61bf5c5f81d6de6d936"
+  integrity sha512-YiOdAMlzYul4ulkIoNp8z7iHDfbT1fbut/9xGFRfxDwU/FmF8HtAUB2f1veu/w50HTeZNopa1OV2PCloZ76XlQ==
+  dependencies:
+    "@embroider/util" "^0.39.1 || ^0.40.0 || ^0.41.0 || ^1.0.0"
+    ember-cli-babel "^7.26.11"
+    ember-cli-htmlbars "^6.0.1"
 
 ember-fetch@^8.1.2:
   version "8.1.2"
