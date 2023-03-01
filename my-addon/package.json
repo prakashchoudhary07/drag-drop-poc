@@ -25,6 +25,7 @@
     "prepack": "rollup --config"
   },
   "dependencies": {
+    "ember-animated": "^1.0.4",
     "@embroider/addon-shim": "^1.0.0"
   },
   "devDependencies": {
@@ -56,7 +57,10 @@
     "version": 2,
     "type": "addon",
     "main": "addon-main.cjs",
-    "app-js": {}
+    "app-js": {
+      "./components/card.js": "./dist/_app_/components/card.js",
+      "./components/drag-drop.js": "./dist/_app_/components/drag-drop.js"
+    }
   },
   "exports": {
     ".": "./dist/index.js",
