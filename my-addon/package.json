@@ -65,6 +65,7 @@
   "exports": {
     ".": "./dist/index.js",
     "./*": "./dist/*.js",
-    "./addon-main.js": "./addon-main.cjs"
+    "./addon-main.js": "./addon-main.cjs",
+    "./styles": "./dist/styles/addon-main.css"
   }
 }
